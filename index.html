@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dr. Dinesh K — Assistant Professor in English Language & Literature</title>
+<meta name="description" content="Academic portfolio of Dr. Dinesh K: English Language Teaching, Teacher Competence, Literature and Creative Writing. Vignan's University, Guntur." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF7F2;
+    --paper-2:#F0EBE1;
+    --ink:#1A1A1A;
+    --ink-soft:#4A4641;
+    --ink-mute:#7A746B;
+    --burgundy:#7A2E2E;
+    --bronze:#A8895C;
+    --rule:#D8CFBE;
+    --shadow:0 1px 2px rgba(26,26,26,.04), 0 8px 24px rgba(26,26,26,.05);
+    --radius:4px;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    font-size:17px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--burgundy); text-decoration:none; border-bottom:1px solid rgba(122,46,46,.25)}
+  a:hover{border-bottom-color:var(--burgundy)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px}
+  h1,h2,h3,.serif{font-family:'Cormorant Garamond', Georgia, serif; font-weight:500; letter-spacing:.01em}
+  h1{font-size:clamp(40px, 6vw, 64px); line-height:1.05; margin:0; font-weight:400}
+  h1 em{font-style:italic; color:var(--burgundy)}
+  h2{font-size:clamp(28px, 3.4vw, 36px); line-height:1.15; margin:0 0 28px}
+  h3{font-size:18px; letter-spacing:.14em; text-transform:uppercase; font-family:'Inter',sans-serif; font-weight:600; color:var(--ink-soft); margin:0 0 18px}
+  .mono{font-family:'JetBrains Mono', ui-monospace, monospace; font-size:13px; color:var(--ink-mute)}
+  .eyebrow{font-family:'Inter',sans-serif; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--burgundy); font-weight:600}
+  .rule{height:1px; background:var(--rule); border:0; margin:48px 0}
+  .muted{color:var(--ink-soft)}
+
+  /* NAV */
+  nav.top{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,247,242,.88);
+    backdrop-filter:saturate(140%) blur(8px);
+    border-bottom:1px solid var(--rule);
+  }
+  nav.top .inner{display:flex; align-items:center; justify-content:space-between; padding:14px 28px; max-width:var(--maxw); margin:0 auto}
+  nav.top .brand{font-family:'Cormorant Garamond', serif; font-size:20px; letter-spacing:.02em; color:var(--ink); border:0}
+  nav.top .brand em{color:var(--burgundy); font-style:italic}
+  nav.top ul{display:flex; gap:22px; list-style:none; padding:0; margin:0; flex-wrap:wrap}
+  nav.top a{font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); border:0; font-weight:500}
+  nav.top a:hover{color:var(--burgundy)}
+  @media (max-width:720px){ nav.top ul{display:none} }
+
+  /* HERO */
+  .hero{padding:120px 0 80px; border-bottom:1px solid var(--rule)}
+  .hero .kicker{display:flex; align-items:center; gap:14px; margin-bottom:28px}
+  .hero .kicker .dot{width:8px; height:8px; background:var(--burgundy); border-radius:50%}
+  .hero .lede{font-family:'Cormorant Garamond', serif; font-style:italic; font-size:clamp(19px, 2vw, 22px); color:var(--ink-soft); max-width:780px; margin-top:28px; line-height:1.5}
+  .hero .meta{display:flex; flex-wrap:wrap; gap:22px; margin-top:36px; font-size:14px; color:var(--ink-soft)}
+  .hero .meta span{display:inline-flex; align-items:center; gap:8px}
+  .hero .meta .sep{color:var(--rule)}
+  .hero .actions{margin-top:44px; display:flex; gap:14px; flex-wrap:wrap}
+  .btn{display:inline-block; padding:12px 22px; border:1px solid var(--ink); color:var(--ink); font-size:13px; letter-spacing:.14em; text-transform:uppercase; border-bottom:1px solid var(--ink); font-weight:600}
+  .btn:hover{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+  .btn.ghost{border-color:var(--rule); color:var(--ink-soft); border-bottom-color:var(--rule)}
+  .btn.ghost:hover{background:var(--paper-2); color:var(--ink); border-color:var(--ink-soft)}
+
+  /* SECTIONS */
+  section{padding:96px 0; border-bottom:1px solid var(--rule)}
+  section:last-of-type{border-bottom:0}
+  .section-head{display:grid; grid-template-columns: 1fr 2fr; gap:40px; margin-bottom:56px; align-items:end}
+  .section-head p{margin:0; color:var(--ink-soft); max-width:640px}
+  @media (max-width:820px){ .section-head{grid-template-columns:1fr; gap:16px} }
+
+  /* BIO */
+  .bio{columns:2; column-gap:48px; font-size:17px; color:var(--ink-soft)}
+  .bio p{margin:0 0 18px}
+  @media (max-width:820px){ .bio{columns:1} }
+
+  /* THEME GRID */
+  .themes{display:grid; grid-template-columns:repeat(3, 1fr); gap:18px}
+  @media (max-width:900px){ .themes{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:560px){ .themes{grid-template-columns:1fr} }
+  .theme{
+    background:var(--paper-2);
+    border:1px solid var(--rule);
+    border-left:3px solid var(--burgundy);
+    padding:22px 22px 22px 22px;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .theme:hover{transform:translateY(-2px); box-shadow:var(--shadow)}
+  .theme h4{margin:0 0 10px; font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500}
+  .theme ul{margin:0; padding:0; list-style:none; font-size:14px; color:var(--ink-soft)}
+  .theme li{padding:4px 0; border-top:1px dashed var(--rule)}
+  .theme li:first-child{border-top:0}
+
+  /* SIGNATURE */
+  .signature{
+    background:var(--paper-2);
+    border:1px solid var(--rule);
+    padding:40px;
+    display:grid; grid-template-columns: 1fr 2fr; gap:40px;
+  }
+  .signature .label{font-family:'Cormorant Garamond',serif; font-style:italic; font-size:22px; color:var(--burgundy)}
+  .signature h4{font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:500; margin:0 0 12px; line-height:1.25}
+  .signature p{margin:0; color:var(--ink-soft)}
+  @media (max-width:820px){ .signature{grid-template-columns:1fr; padding:28px} }
+
+  /* GEO */
+  .geo{display:grid; grid-template-columns:repeat(4, 1fr); gap:0; border:1px solid var(--rule)}
+  .geo .cell{padding:28px; border-right:1px solid var(--rule); border-bottom:1px solid var(--rule); background:var(--paper)}
+  .geo .cell:nth-child(4n){border-right:0}
+  .geo .cell .flag{font-family:'Cormorant Garamond',serif; font-style:italic; font-size:26px; color:var(--burgundy); margin-bottom:8px}
+  .geo .cell h4{margin:0 0 10px; font-family:'Inter',sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink)}
+  .geo .cell ul{margin:0; padding:0; list-style:none; font-size:14px; color:var(--ink-soft)}
+  .geo .cell li{padding:6px 0; border-top:1px dashed var(--rule)}
+  .geo .cell li:first-child{border-top:0}
+  .geo .cell .dates{display:block; font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--ink-mute); margin-top:4px}
+  @media (max-width:900px){ .geo{grid-template-columns:repeat(2,1fr)} .geo .cell:nth-child(4n){border-right:1px solid var(--rule)} .geo .cell:nth-child(2n){border-right:0} }
+  @media (max-width:520px){ .geo{grid-template-columns:1fr} .geo .cell{border-right:0!important} }
+
+  /* TIMELINE */
+  .timeline{position:relative; padding-left:28px; border-left:1px solid var(--rule)}
+  .tl-item{position:relative; padding:0 0 28px 28px}
+  .tl-item:before{content:""; position:absolute; left:-7px; top:6px; width:13px; height:13px; border-radius:50%; background:var(--paper); border:2px solid var(--burgundy)}
+  .tl-item .when{font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--ink-mute); letter-spacing:.04em}
+  .tl-item .role{font-family:'Cormorant Garamond', serif; font-size:22px; margin:4px 0 4px; line-height:1.25}
+  .tl-item .org{color:var(--ink-soft); font-size:15px}
+
+  /* PUBLICATIONS */
+  .pub-group{margin-bottom:48px}
+  .pub-group h3{border-bottom:1px solid var(--rule); padding-bottom:12px}
+  .pub{
+    padding:22px 0; border-bottom:1px dashed var(--rule);
+    display:grid; grid-template-columns: 90px 1fr; gap:24px;
+  }
+  .pub .year{font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--burgundy); padding-top:4px}
+  .pub .title{font-family:'Cormorant Garamond', serif; font-size:21px; line-height:1.3; margin:0 0 6px; font-weight:500}
+  .pub .venue{font-size:15px; color:var(--ink-soft); font-style:italic}
+  .pub .meta{margin-top:8px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--ink-mute)}
+  .pub .meta span{margin-right:14px}
+  @media (max-width:640px){ .pub{grid-template-columns:1fr; gap:6px} }
+
+  /* FEATURED */
+  .featured{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+  @media (max-width:900px){ .featured{grid-template-columns:1fr} }
+  .feat{
+    background:var(--paper-2); border:1px solid var(--rule); padding:26px;
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .feat .num{font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--burgundy); letter-spacing:.1em}
+  .feat h4{font-family:'Cormorant Garamond', serif; font-size:22px; line-height:1.25; margin:0; font-weight:500}
+  .feat p{margin:0; font-size:14px; color:var(--ink-soft)}
+
+  /* CURRICULUM */
+  .cur{
+    border:1px solid var(--rule); background:var(--paper-2); padding:32px;
+    display:grid; grid-template-columns: 1fr 2fr; gap:32px;
+  }
+  .cur dl{margin:0}
+  .cur dt{font-family:'Inter',sans-serif; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-mute); margin-top:12px}
+  .cur dt:first-child{margin-top:0}
+  .cur dd{margin:4px 0 0; font-family:'Cormorant Garamond',serif; font-size:20px; color:var(--ink)}
+  @media (max-width:820px){ .cur{grid-template-columns:1fr; padding:24px} }
+
+  /* LITERATURE */
+  .lit-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+  @media (max-width:820px){ .lit-grid{grid-template-columns:1fr} }
+  .lit{
+    background:var(--paper); border:1px solid var(--rule); padding:26px;
+    position:relative; overflow:hidden;
+  }
+  .lit:before{content:"“"; position:absolute; right:14px; top:-10px; font-family:'Cormorant Garamond',serif; font-size:120px; color:var(--rule); line-height:1}
+  .lit .kind{font-family:'Inter',sans-serif; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--burgundy)}
+  .lit h4{font-family:'Cormorant Garamond',serif; font-style:italic; font-size:26px; line-height:1.2; margin:10px 0 8px; font-weight:500}
+  .lit .venue{font-size:14px; color:var(--ink-soft); font-style:italic}
+  .lit .link{display:inline-block; margin-top:14px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; font-weight:600}
+
+  /* LANGUAGES */
+  .langs{display:grid; grid-template-columns:repeat(5,1fr); gap:0; border:1px solid var(--rule)}
+  .lang{padding:22px; border-right:1px solid var(--rule); background:var(--paper)}
+  .lang:last-child{border-right:0}
+  .lang .name{font-family:'Cormorant Garamond',serif; font-size:22px; margin-bottom:6px}
+  .lang .level{font-size:13px; color:var(--ink-soft)}
+  @media (max-width:900px){ .langs{grid-template-columns:repeat(2,1fr)} .lang{border-right:1px solid var(--rule); border-bottom:1px solid var(--rule)} .lang:nth-child(2n){border-right:0} .lang:nth-child(n+4){border-bottom:0} }
+  @media (max-width:520px){ .langs{grid-template-columns:1fr} .lang{border-right:0!important} .lang{border-bottom:1px solid var(--rule)} .lang:last-child{border-bottom:0} }
+
+  /* CONTACT */
+  .contact{display:grid; grid-template-columns: 1fr 1fr; gap:40px}
+  .contact .card{background:var(--paper-2); border:1px solid var(--rule); padding:32px}
+  .contact .card h4{font-family:'Cormorant Garamond',serif; font-size:26px; margin:0 0 12px; font-weight:500}
+  .contact dl{margin:0}
+  .contact dt{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-mute); margin-top:14px}
+  .contact dt:first-child{margin-top:0}
+  .contact dd{margin:4px 0 0; font-size:16px}
+  @media (max-width:820px){ .contact{grid-template-columns:1fr} }
+
+  /* FOOTER */
+  footer{padding:48px 0; border-top:1px solid var(--rule); color:var(--ink-mute); font-size:13px}
+  footer .inner{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap}
+
+  /* REVEAL */
+  .reveal{opacity:0; transform:translateY(10px); transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1; transform:none}
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="Primary">
+  <div class="inner">
+    <a class="brand" href="#top">Dr. Dinesh <em>K</em></a>
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#conferences">Conferences</a></li>
+      <li><a href="#literature">Literature</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="eyebrow">Academic Portfolio · Vignan's University, Guntur</span>
+    </div>
+    <h1>Dr. Dinesh <em>K</em><br/>Assistant Professor in English Language &amp; Literature</h1>
+    <p class="lede">Scholarly work at the intersection of tertiary-level ESL pedagogy, teacher competence, literary studies and creative writing — informed by two decades of teaching across India, Eritrea, Oman and Libya.</p>
+    <div class="meta">
+      <span>Researcher</span><span class="sep">·</span>
+      <span>English Language Teaching</span><span class="sep">·</span>
+      <span>Teacher Competence</span><span class="sep">·</span>
+      <span>Literature</span><span class="sep">·</span>
+      <span>Creative Writing</span>
+    </div>
+    <div class="actions">
+      <a class="btn" href="#research">Research</a>
+      <a class="btn ghost" href="#publications">Publications</a>
+      <a class="btn ghost" href="#literature">Literary Work</a>
+      <a class="btn ghost" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="profile">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Profile</h2>
+      <p>An academic biography drawn from documented teaching, research and literary practice across South Asia, the Horn of Africa and the Arabian Peninsula.</p>
+    </div>
+    <div class="bio reveal">
+      <p>Dr. Dinesh K is Assistant Professor in the Department of English at Vignan's University, Guntur, Andhra Pradesh. He holds a Ph.D. in English Language Teaching from Anna University, Chennai (2023), where his thesis examined ESL teachers' competence and its impact on second language learning in the tertiary-level classroom.</p>
+      <p>His scholarly work engages with English language teaching at the tertiary level, teacher competence, communicative language teaching, curriculum design, instructional material development, translation studies and cultural representation in literature. His research considers pedagogical practices across diverse cultural contexts, with comparative attention to language-teaching models in Eritrea, Oman, Libya and India.</p>
+      <p>Alongside academic research, Dr. Dinesh is an active literary practitioner. His poetry and critical essays have appeared in nationally and internationally recognised platforms, including <em>Indian Literature</em> (Sahitya Akademi, New Delhi) and <em>eMerge Magazine</em> (USA). He has contributed to curriculum development through the design and authorship of instructional materials for undergraduate programmes, including a complete teaching package on Indian Writing in English for the Institute of Correspondence Education, University of Madras.</p>
+      <p>His academic career spans more than two decades and includes teaching appointments in India, Eritrea, Oman and Libya. He holds an IELTS Train-the-Trainer certificate from the British Council (2012) and an ETS TOEFL certificate (2023). His research and creative interests intersect in the areas of language, culture, pedagogy and poetic expression.</p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Research</h2>
+      <p>Thematic clusters drawn from documented research interests, doctoral work and publication record.</p>
+    </div>
+
+    <div class="themes reveal">
+      <div class="theme">
+        <h4>English Language Teaching</h4>
+        <ul>
+          <li>Tertiary-level ESL pedagogy</li>
+          <li>Communicative Language Teaching</li>
+          <li>LSRW skills</li>
+        </ul>
+      </div>
+      <div class="theme">
+        <h4>Teacher Development</h4>
+        <ul>
+          <li>Teacher competence</li>
+          <li>ESL teacher training</li>
+          <li>Classroom observation</li>
+        </ul>
+      </div>
+      <div class="theme">
+        <h4>Curriculum &amp; Materials</h4>
+        <ul>
+          <li>Curriculum design</li>
+          <li>Instructional material development</li>
+          <li>Web-based teaching tools</li>
+        </ul>
+      </div>
+      <div class="theme">
+        <h4>Language &amp; Assessment</h4>
+        <ul>
+          <li>IELTS training</li>
+          <li>TOEFL preparation</li>
+          <li>Translation studies &amp; interpretation</li>
+        </ul>
+      </div>
+      <div class="theme">
+        <h4>Literature &amp; Culture</h4>
+        <ul>
+          <li>Cultural representation in literature</li>
+          <li>Indian Writing in English</li>
+          <li>Literature as cultural studies</li>
+        </ul>
+      </div>
+      <div class="theme">
+        <h4>Creative Practice</h4>
+        <ul>
+          <li>Poetry</li>
+          <li>Literary essays</li>
+          <li>Intersemiotic translation</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="rule" />
+
+    <div class="signature reveal">
+      <div>
+        <div class="label">Research Signature</div>
+        <div class="mono" style="margin-top:10px">Doctoral Anchor · 2023</div>
+      </div>
+      <div>
+        <h4>ESL Teachers' Competence and its impact on Second Language Learning in the Tertiary Level ESL Classroom — A Study in Select Colleges in Tamil Nadu</h4>
+        <p>Ph.D. thesis, Department of English, College of Engineering, Guindy Campus, Anna University, Chennai, 2023. The work is supported by a sustained publication record on ESL teacher competence and by comparative research on language-teaching models across India, Eritrea, Oman and Libya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>International Academic Journey</h2>
+      <p>Documented teaching appointments across four countries, spanning more than two decades.</p>
+    </div>
+
+    <div class="geo reveal">
+      <div class="cell">
+        <div class="flag">India</div>
+        <h4>Appointments</h4>
+        <ul>
+          <li>Vignan's University, Guntur <span class="dates">2023 – Present</span></li>
+          <li>Anna University, Chennai <span class="dates">2016 – 2019</span></li>
+          <li>RKM Vivekananda College, Chennai <span class="dates">2008–09 · 2014–16</span></li>
+          <li>Sir Theagaraya College, Chennai <span class="dates">2012</span></li>
+          <li>Pachaiyappa's College, Chennai <span class="dates">1998 – 2003</span></li>
+          <li>Sir Theagaraya Evening College <span class="dates">1998 – 2003</span></li>
+          <li>YMCA College of Physical Education <span class="dates">1997 – 1998</span></li>
+        </ul>
+      </div>
+      <div class="cell">
+        <div class="flag">Eritrea</div>
+        <h4>Appointments</h4>
+        <ul>
+          <li>College of Business and Social Sciences <span class="dates">2019 – 2023</span></li>
+          <li>Eritrea Institute of Technology <span class="dates">2003 – 2007</span></li>
+        </ul>
+      </div>
+      <div class="cell">
+        <div class="flag">Oman</div>
+        <h4>Appointments</h4>
+        <ul>
+          <li>Vocational Training Centre, Sur <span class="dates">2010 – 2011</span></li>
+        </ul>
+      </div>
+      <div class="cell">
+        <div class="flag">Libya</div>
+        <h4>Appointments</h4>
+        <ul>
+          <li>College of Arts &amp; Sciences, Ajdabia, University of Benghazi <span class="dates">2013 – 2014</span></li>
+          <li>College of Arts, 7th October University, Misrata <span class="dates">2009 – 2010</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="rule" />
+
+    <h3 style="margin-top:24px">Career Timeline</h3>
+    <div class="timeline reveal">
+      <div class="tl-item"><div class="when">2023 – Present</div><div class="role">Assistant Professor</div><div class="org">Vignan's University, Guntur, Andhra Pradesh</div></div>
+      <div class="tl-item"><div class="when">2019 – 2023</div><div class="role">Lecturer (Graded)</div><div class="org">College of Business and Social Sciences, Eritrea</div></div>
+      <div class="tl-item"><div class="when">2016 – 2019</div><div class="role">Full-time Ph.D. Researcher (ACRF Scholarship)</div><div class="org">Anna University, Chennai</div></div>
+      <div class="tl-item"><div class="when">2014 – 2016</div><div class="role">Assistant Professor</div><div class="org">RKM Vivekananda College, Mylapore, Chennai</div></div>
+      <div class="tl-item"><div class="when">2013 – 2014</div><div class="role">Lecturer (Graded)</div><div class="org">College of Arts and Sciences, Ajdabia, University of Benghazi, Libya</div></div>
+      <div class="tl-item"><div class="when">2012</div><div class="role">Assistant Professor</div><div class="org">Sir Theagaraya College, Chennai</div></div>
+      <div class="tl-item"><div class="when">2011 – 2013</div><div class="role">Head, Training Division — IELTS Trainer</div><div class="org">Global Opportunities, Chennai</div></div>
+      <div class="tl-item"><div class="when">2010 – 2011</div><div class="role">English Language Teacher (Graded)</div><div class="org">Vocational Training Centre, Sur, Oman</div></div>
+      <div class="tl-item"><div class="when">2009 – 2010</div><div class="role">Lecturer (Graded)</div><div class="org">College of Arts, 7th October University, Misrata, Libya</div></div>
+      <div class="tl-item"><div class="when">2008 – 2009</div><div class="role">Lecturer</div><div class="org">RKM Vivekananda College, Mylapore, Chennai</div></div>
+      <div class="tl-item"><div class="when">2008 – 2009</div><div class="role">IELTS Trainer (Part-time)</div><div class="org">Senator Academy, Chennai</div></div>
+      <div class="tl-item"><div class="when">2003 – 2007</div><div class="role">Lecturer (Graded)</div><div class="org">Eritrea Institute of Technology, Eritrea</div></div>
+      <div class="tl-item"><div class="when">1998 – 2003</div><div class="role">Lecturer</div><div class="org">Pachaiyappa's College, Chennai</div></div>
+      <div class="tl-item"><div class="when">1998 – 2003</div><div class="role">Lecturer</div><div class="org">Sir Theagaraya Evening College, Chennai</div></div>
+      <div class="tl-item"><div class="when">1997 – 1998</div><div class="role">Lecturer</div><div class="org">YMCA College of Physical Education, Chennai</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Education &amp; Certifications</h2>
+      <p>Degrees, language-teaching certificates and technical qualifications.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:40px" class="reveal">
+      <div>
+        <h3>Degrees</h3>
+        <div class="pub" style="border:0; padding:14px 0">
+          <div class="year">2023</div>
+          <div><div class="title" style="font-size:19px">Ph.D. — English Language Teaching</div><div class="venue">Anna University, Chennai</div></div>
+        </div>
+        <div class="pub" style="border:0; padding:14px 0">
+          <div class="year">1997</div>
+          <div><div class="title" style="font-size:19px">M.Phil. — English Literature</div></div>
+        </div>
+        <div class="pub" style="border:0; padding:14px 0">
+          <div class="year">1996</div>
+          <div><div class="title" style="font-size:19px">M.A. — English Literature &amp; Language</div><div class="venue">Presidency College, University of Madras</div></div>
+        </div>
+        <div class="pub" style="border:0; padding:14px 0">
+          <div class="year">1993</div>
+          <div><div class="title" style="font-size:19px">B.A. — English Language and Literature</div><div class="venue">DRBCCC Hindu College, University of Madras</div></div>
+        </div>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <div class="pub" style="border:0; padding:14px 0">
+          <div class="year">2023</div>
+          <div><div class="title" style="font-size:19px">ETS TOEFL Certificate</div></div>
+        </div>
+        <div class="pub" style="border:0; padding:14px 0">
+          <div class="year">2012</div>
+          <div><div class="title" style="font-size:19px">IELTS Train-the-Trainer Certificate</div><div class="venue">British Council, Chennai</div></div>
+        </div>
+        <div class="pub" style="border:0; padding:14px 0">
+          <div class="year">1994</div>
+          <div><div class="title" style="font-size:19px">PGDCP — Computers</div><div class="venue">Datamation · DOEACC 'O' Level Accredited</div></div>
+        </div>
+        <div class="pub" style="border:0; padding:14px 0">
+          <div class="year">1988</div>
+          <div><div class="title" style="font-size:19px">English Typing (30 WPM)</div><div class="venue">Board of Technical Education, Tamil Nadu</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Publications</h2>
+      <p>Publications are separated into scholarly, book/chapter contributions and creative writing, using only the bibliographic information documented in the CV.</p>
+    </div>
+
+    <div class="pub-group reveal">
+      <h3>Academic Research</h3>
+
+      <div class="pub">
+        <div class="year">2026</div>
+        <div>
+          <div class="title">Panel Composition and Bleed Technique in the Intersemiotic Translation of Shakespeare's <em>The Tempest</em> into a Graphic Novel</div>
+          <div class="venue">With Dr. Bibin. In <em>Shakespeare and Contemporary Studies</em>, pp. 170–179. Authorspress, New Delhi.</div>
+          <div class="meta"><span>ISBN 979-93-6095-655-4</span><span>Book chapter</span></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2017</div>
+        <div>
+          <div class="title">ESL Teacher Competence: A Ubiquitous Factor in ESL Teaching at the Tertiary Level</div>
+          <div class="venue">With Dr. T. Shrimathy Venkatalakshmi. <em>The English Classroom</em>, Regional Institute of English, South India, Vol. 19, No. 2, pp. 68–79.</div>
+          <div class="meta"><span>ISSN 2250–2831</span><span><a href="https://www.riesi.ac.in/wp-content/uploads/2022/02/11-abstractvol.19no.2Dec.2017.pdf">RIESI</a></span></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2015</div>
+        <div>
+          <div class="title">Teaching Literature for Communicative ends: A short study on the Eritrean, Oman and Libyan Language Teaching models in comparison to our teaching methods</div>
+          <div class="venue">In <em>Methods and Materials for Teaching English Language and Literature</em>, Dept. of English, DRBCCC Hindu College, Chennai, pp. 76–81.</div>
+          <div class="meta"><span>ISBN 978-93-5212-059-8</span><span>Edited volume</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-group reveal">
+      <h3>Books / Chapters / Academic Contributions</h3>
+      <div class="pub">
+        <div class="year">—</div>
+        <div>
+          <div class="title">Indian Writing in English — Instructional Package (Paper-VII, Package 1)</div>
+          <div class="venue">Third Year B.A. English Literature. Institute of Correspondence Education, University of Madras, Chennai.</div>
+          <div class="meta"><span>Code 99UEN303</span><span>Authored complete package</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-group reveal">
+      <h3>Professional / Creative Writing</h3>
+
+      <div class="pub">
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Conscience Conditioned</div>
+          <div class="venue"><em>eMerge Magazine</em>, USA. Print ISSN 3068-7497, Vol. 1, Issue No. 1, 2026.</div>
+          <div class="meta"><span><a href="https://emerge-magazine.com/conscience-conditioned/">Read online</a></span></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2025</div>
+        <div>
+          <div class="title">A Song</div>
+          <div class="venue"><em>eMerge Magazine</em>, USA.</div>
+          <div class="meta"><span><a href="https://emerge-magazine.com/a-song/">Read online</a></span></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2018</div>
+        <div>
+          <div class="title">Kannadasan: An Introduction, Poetry, Kavignar Kannadasan</div>
+          <div class="venue"><em>Indian Literature</em> — Sahitya Akademi, Delhi, Vol. 305, pp. 75–88.</div>
+          <div class="meta"><span>ISSN 0019-5804</span><span>May/June</span></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2016</div>
+        <div>
+          <div class="title">Poems</div>
+          <div class="venue"><em>Indian Literature</em> — Sahitya Akademi, Delhi, Vol. 294, pp. 152–156.</div>
+          <div class="meta"><span>ISSN 0019-5804</span><span>July/August</span><span><a href="https://www.jstor.org/stable/44479534">JSTOR</a></span></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">1997</div>
+        <div>
+          <div class="title">Poems — International Poetry Competition</div>
+          <div class="venue">International Library of Poetry, Maryland, USA.</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule" />
+
+    <h3>Selected Scholarship</h3>
+    <div class="featured reveal">
+      <div class="feat">
+        <div class="num">01 · 2017</div>
+        <h4>ESL Teacher Competence: A Ubiquitous Factor in ESL Teaching at the Tertiary Level</h4>
+        <p>With Dr. T. Shrimathy Venkatalakshmi. <em>The English Classroom</em>, RIESI, Vol. 19, No. 2.</p>
+      </div>
+      <div class="feat">
+        <div class="num">02 · 2026</div>
+        <h4>Panel Composition and Bleed Technique in the Intersemiotic Translation of Shakespeare's <em>The Tempest</em> into a Graphic Novel</h4>
+        <p>With Dr. Bibin. <em>Shakespeare and Contemporary Studies</em>, Authorspress.</p>
+      </div>
+      <div class="feat">
+        <div class="num">03 · 2015</div>
+        <h4>Teaching Literature for Communicative ends</h4>
+        <p>Comparative study of Eritrean, Omani and Libyan language-teaching models.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="curriculum">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Curriculum &amp; Instructional Material Development</h2>
+      <p>Documented contribution to undergraduate curriculum design.</p>
+    </div>
+    <div class="cur reveal">
+      <div>
+        <div class="label" style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:22px; color:var(--burgundy)">Commissioned Package</div>
+        <div class="mono" style="margin-top:10px">University of Madras · ICE</div>
+      </div>
+      <div>
+        <dl>
+          <dt>Course</dt><dd>Third Year B.A. English Literature, Paper-VII</dd>
+          <dt>Title</dt><dd>Indian Writing in English — Package 1</dd>
+          <dt>Code</dt><dd>99UEN303</dd>
+          <dt>Commissioned by</dt><dd>Institute of Correspondence Education, University of Madras, Chennai</dd>
+          <dt>Contribution</dt><dd>Authored the complete instructional package</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="conferences">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Conference Presentations</h2>
+      <p>Papers presented at international and national conferences and seminars.</p>
+    </div>
+    <div class="reveal">
+      <div class="pub">
+        <div class="year">2018</div>
+        <div>
+          <div class="title">ESL Classroom Observation: The Teacher's Mindset and Management's Inhibitions</div>
+          <div class="venue">International Conference on Evolving Strategies to Overcome Continuing Challenges in Second Language Education at the Tertiary Level. Dept. of English, Anna University &amp; SSN College of Engineering. 1–3 March 2018.</div>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="year">2017</div>
+        <div>
+          <div class="title">Teacher Competence and English Language Teaching</div>
+          <div class="venue">National Conference on New Perspectives in English Language Teaching (NPELT'17). Hindustan University. 30–31 March 2017.</div>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="year">2017</div>
+        <div>
+          <div class="title">Problematization of ESL Teaching and its Effects on Learning Outcomes</div>
+          <div class="venue">International Conference on Empowering the Language Learner — Materials, Methods and Testing. Dept. of English, Anna University. 23–25 March 2017.</div>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="year">2016</div>
+        <div>
+          <div class="title">English Language Teaching — A naturalistic intrinsic innovative humanistic approach (NIIHA)</div>
+          <div class="venue">International Seminar on The Changing Contours of English Language and Literature. The Meenakshi College for Women, Chennai. 7–8 September 2016.</div>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="year">2016</div>
+        <div>
+          <div class="title">Introspection into ESL Teaching Theories and Methods in juxtaposition to the ground realities</div>
+          <div class="venue">International Conference on Innovations in the Teaching of English Language and Literature. VIT, Vellore. 12–13 August 2016.</div>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="year">2015</div>
+        <div>
+          <div class="title">A Short Study on The Eritrean, Oman, and Libyan Teaching Model in Comparison to Our Teaching Methods</div>
+          <div class="venue">National Level Seminar. DRBCCC Hindu College, Chennai. 12 February 2015.</div>
+        </div>
+      </div>
+      <div class="pub">
+        <div class="year">1997</div>
+        <div>
+          <div class="title">Tagore — as a Spiritual Seer</div>
+          <div class="venue">Pachaiyappa's College, Chennai. 1 March 1997.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Teaching &amp; IELTS Training</h2>
+      <p>Documented teaching interests, professional-development themes and language-training experience.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:40px" class="reveal">
+      <div>
+        <h3>Teaching Interests</h3>
+        <ul style="padding-left:18px; color:var(--ink-soft)">
+          <li>Tertiary-level ESL pedagogy</li>
+          <li>Communicative language teaching</li>
+          <li>Literature for communicative competence</li>
+          <li>LSRW skills</li>
+          <li>Teacher competence and development</li>
+          <li>Curriculum and instructional material design</li>
+          <li>Technology in language teaching</li>
+          <li>Critical thinking in the language classroom</li>
+        </ul>
+      </div>
+      <div>
+        <h3>IELTS &amp; Language Training</h3>
+        <div class="pub" style="border:0; padding:14px 0"><div class="year">2011–13</div><div><div class="title" style="font-size:19px">Head, Training Division — IELTS Trainer</div><div class="venue">Global Opportunities, Chennai</div></div></div>
+        <div class="pub" style="border:0; padding:14px 0"><div class="year">2008–09</div><div><div class="title" style="font-size:19px">IELTS Trainer (Part-time)</div><div class="venue">Senator Academy, Chennai</div></div></div>
+        <div class="pub" style="border:0; padding:14px 0"><div class="year">2012</div><div><div class="title" style="font-size:19px">IELTS Train-the-Trainer Certificate</div><div class="venue">British Council, Chennai</div></div></div>
+        <div class="pub" style="border:0; padding:14px 0"><div class="year">2023</div><div><div class="title" style="font-size:19px">ETS TOEFL Certificate</div></div></div>
+      </div>
+    </div>
+
+    <hr class="rule" />
+
+    <h3>Selected Professional Development</h3>
+    <div class="reveal">
+      <div class="pub"><div class="year">2023</div><div><div class="title" style="font-size:19px">Literature Teaching as Cultural Studies</div><div class="venue">Faculty Development Programme · CLASET &amp; Shiv Nadar University at Anna University</div></div></div>
+      <div class="pub"><div class="year">2020</div><div><div class="title" style="font-size:19px">Web-based Tools for Designing &amp; Developing Teaching Materials</div><div class="venue">Faculty Development Programme · Dept. of English, Anna University</div></div></div>
+      <div class="pub"><div class="year">2018</div><div><div class="title" style="font-size:19px">Teaching Listening and Speaking Skills · Enhancing LSRW Skills · Business English</div><div class="venue">FDPs and workshops at Anna University, MNM Jain, SA Engineering College, RELO US Embassy</div></div></div>
+      <div class="pub"><div class="year">2017</div><div><div class="title" style="font-size:19px">Integrating Technology in University Classrooms (ITUC)</div><div class="venue">24-hour workshop series · U.S. Dept. of State &amp; Anna University</div></div></div>
+      <div class="pub"><div class="year">2016</div><div><div class="title" style="font-size:19px">Shaping the Way We Teach English · Teaching Critical Thinking · ICT in Language Teaching</div><div class="venue">American English Webinar Series (RELO), MOP Vaishnav College, Anna University</div></div></div>
+      <div class="pub"><div class="year">1998</div><div><div class="title" style="font-size:19px">Teaching Communicative English</div><div class="venue">Workshop for Teachers of English · State Institute of English</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="literature">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Literature &amp; Creative Writing</h2>
+      <p>Poetry and literary essays published in <em>Indian Literature</em> (Sahitya Akademi) and international literary magazines.</p>
+    </div>
+
+    <div class="lit-grid reveal">
+      <div class="lit">
+        <div class="kind">Poetry</div>
+        <h4>Kannadasan: An Introduction</h4>
+        <div class="venue">Indian Literature — Sahitya Akademi, Vol. 305 · 2018</div>
+      </div>
+      <div class="lit">
+        <div class="kind">Poetry</div>
+        <h4>Poems</h4>
+        <div class="venue">Indian Literature — Sahitya Akademi, Vol. 294 · 2016</div>
+        <a class="link" href="https://www.jstor.org/stable/44479534">JSTOR →</a>
+      </div>
+      <div class="lit">
+        <div class="kind">Creative Non-fiction</div>
+        <h4>Conscience Conditioned</h4>
+        <div class="venue">eMerge Magazine, USA · 2025</div>
+        <a class="link" href="https://emerge-magazine.com/conscience-conditioned/">Read →</a>
+      </div>
+      <div class="lit">
+        <div class="kind">Poetry</div>
+        <h4>A Song</h4>
+        <div class="venue">eMerge Magazine, USA · 2025</div>
+        <a class="link" href="https://emerge-magazine.com/a-song/">Read →</a>
+      </div>
+    </div>
+
+    <hr class="rule" />
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:40px" class="reveal">
+      <div>
+        <h3>Award</h3>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:26px; font-style:italic">Best Poem · 1997</div>
+      </div>
+      <div>
+        <h3>Also</h3>
+        <p class="muted" style="margin:0">Poems published in the International Poetry Competition, International Library of Poetry, Maryland, USA (1997). Articles and poems contributed to local weekly publications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="languages">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Languages</h2>
+      <p>Language proficiency as documented in the CV.</p>
+    </div>
+    <div class="langs reveal">
+      <div class="lang"><div class="name">English</div><div class="level">Proficient · Teaching, Research &amp; Creative Writing</div></div>
+      <div class="lang"><div class="name">Malayalam</div><div class="level">Native · Speaking</div></div>
+      <div class="lang"><div class="name">Tamil</div><div class="level">Proficient · Read, Write &amp; Speak</div></div>
+      <div class="lang"><div class="name">Telugu</div><div class="level">Working Knowledge</div></div>
+      <div class="lang"><div class="name">Arabic</div><div class="level">Beginner</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Contact</h2>
+      <p>For academic collaboration, conference participation and research networking.</p>
+    </div>
+    <div class="contact reveal">
+      <div class="card">
+        <h4>Dr. Dinesh K</h4>
+        <p class="muted" style="margin:0 0 14px">Assistant Professor, Department of English<br/>Vignan's University, Guntur, Andhra Pradesh, India</p>
+        <dl>
+          <dt>Email</dt><dd><a href="mailto:dinkumanda@gmail.com">dinkumanda@gmail.com</a></dd>
+          <dt>Phone</dt><dd>+91 9840656964</dd>
+          <dt>ORCID</dt><dd><a href="https://orcid.org/0000-0002-5057-6927">0000-0002-5057-6927</a></dd>
+          <dt>Portfolio</dt><dd><a href="https://drdineshk-q5orn955.public.builtwithrocket.new/">drdineshk · builtwithrocket</a></dd>
+        </dl>
+      </div>
+      <div class="card">
+        <h4>References</h4>
+        <p class="muted" style="margin:0 0 14px">Academic referees are available on request. Contact details are not displayed publicly.</p>
+        <dl>
+          <dt>Referee</dt><dd>Dr. Kesavan V E · Associate Professor, King Saud University, Riyadh</dd>
+          <dt>Referee</dt><dd>Dr. Reny George · Professor, College of Science, Prince Sattam Bin Abdulaziz University, Al Kharj, Saudi Arabia</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap inner">
+    <div>© Dr. Dinesh K · Portfolio compiled from the supplied CV · All factual claims are traceable to source.</div>
+    <div class="mono">ORCID 0000-0002-5057-6927</div>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // Active nav
+  const links = document.querySelectorAll('nav.top a[href^="#"]');
+  const secs = [...links].map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  window.addEventListener('scroll', ()=>{
+    const y = window.scrollY + 120;
+    let current = secs[0];
+    secs.forEach(s=>{ if(s && s.offsetTop <= y) current = s; });
+    links.forEach(a=>{
+      a.style.color = (current && a.getAttribute('href') === '#'+current.id) ? 'var(--burgundy)' : '';
+    });
+  }, {passive:true});
+</script>
+
+</body>
+</html>
